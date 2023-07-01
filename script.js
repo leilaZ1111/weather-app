@@ -8,8 +8,10 @@ const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
+// Hide weather and forecast sections initially
 document.querySelector(".weather").style.display = "none";
 document.querySelector(".nextDays").style.display = "none";
+
 
 async function checkweather(city){
     const response = await fetch(apiUrl + city +`&appid=${apiKey}`);
@@ -21,6 +23,7 @@ async function checkweather(city){
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
         document.querySelector(".nextDays").style.display = "none";
+        document.body.style.height = "100vh";
     }
     else{
         var data = await response.json();
@@ -124,7 +127,7 @@ async function checkforcast(city){
 
 
             const nextDays = document.getElementById("nextDays");
-
+            nextDays.innerHTML = "";
             fiveDayObjects.forEach((element) => {
                 const day = document.createElement("div");
                 day.classList.add("day1");
@@ -147,7 +150,6 @@ async function checkforcast(city){
                 maxTemp.innerText = Math.round(element.maxTemperature) + "°C";
                 day.append(maxTemp);
 
-
                 nextDays.append(day);
         })
 
@@ -156,25 +158,27 @@ async function checkforcast(city){
     }
 
     searchBtn.addEventListener("click", () => {
+        console.log(screen.width);
+        if(screen.width < 600){
+            document.body.style.height = "100%";
+        }
+        else{
+            document.body.style.height = "100vh";
+        }
         checkweather(searchBox.value);
         checkforcast(searchBox.value);
+        if(searchBox.value == ""){
+            document.querySelector(".card").style.height = "17%";
+        }else(searchBox.value != "")
+        {
+        //document.querySelector("body").style.height = "100%"; }
+        }
     });
 
-// const fiveDaysWeather = [
-//     {weekDay: 'Friday', icon: '10d', weatherInfo: 'light rain', minTemperature: 15.76, maxTemperature: 19.86},
-//     {weekDay: 'Saturday', icon: '04d', weatherInfo: 'overcast clouds', minTemperature: 12.39, maxTemperature: 18.5},  
-//     {weekDay: 'Sunday', icon: '04d', weatherInfo: 'broken clouds', minTemperature: 14.86, maxTemperature: 22.68},
-//     {weekDay: 'Monday', icon: '03d', weatherInfo: 'scattered clouds', minTemperature: 12.98, maxTemperature: 20.87},
-//     {weekDay: 'Tuesday', icon: '04d', weatherInfo: 'broken clouds', minTemperature: 13.95, maxTemperature: 22.26}
-// ]
+
 
 const nextDays = document.getElementById("nextDays");
 let daydiv = document.getElementById("daydiv");
-// let day1div = document.getElementById("day1div");
-// let day2div = document.getElementById("day2div");
-// let day3div = document.getElementById("day3div");
-// let day4div = document.getElementById("day4div");
-// let day5div = document.getElementById("day5div");
 
 let weekDayId = document.getElementById("weekDayId");
 let iconId = document.getElementById("iconId");
@@ -183,4 +187,10 @@ let minTemp = document.getElementById("minTemp");
 
 
 
-
+// const fiveDaysWeather = [
+//     {weekDay: 'Friday', icon: '10d', weatherInfo: 'light rain', minTemperature: 15.76, maxTemperature: 19.86},
+//     {weekDay: 'Saturday', icon: '04d', weatherInfo: 'overcast clouds', minTemperature: 12.39, maxTemperature: 18.5},  
+//     {weekDay: 'Sunday', icon: '04d', weatherInfo: 'broken clouds', minTemperature: 14.86, maxTemperature: 22.68},
+//     {weekDay: 'Monday', icon: '03d', weatherInfo: 'scattered clouds', minTemperature: 12.98, maxTemperature: 20.87},
+//     {weekDay: 'Tuesday', icon: '04d', weatherInfo: 'broken clouds', minTemperature: 13.95, maxTemperature: 22.26}
+// ]
