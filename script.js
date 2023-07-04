@@ -1,5 +1,5 @@
-// require("dotenv").config();
-const apiKey = "db33bb1dbccc9a3aa44a3979039d9fc7";
+import { Data } from "./config.js";
+
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const apiUrl5days =
@@ -14,7 +14,7 @@ document.querySelector(".weather").style.display = "none";
 document.querySelector(".nextDays").style.display = "none";
 
 async function checkweather(city) {
-  const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+  const response = await fetch(apiUrl + city + `&appid=${Data.API_KEY}`);
 
   // console.log(data);
 
@@ -68,7 +68,7 @@ async function checkweather(city) {
 
 ///////////////////////////////////////////
 async function checkforcast(city) {
-  const response = await fetch(apiUrl5days + city + `&appid=${apiKey}`);
+  const response = await fetch(apiUrl5days + city + `&appid=${Data.API_KEY}`);
   if (response.status == 404) {
     document.querySelector(".error").style.display = "block";
     document.querySelector(".weather").style.display = "none";
