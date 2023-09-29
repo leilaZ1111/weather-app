@@ -1,10 +1,5 @@
 # My First Weather App
 
-- `Repository:` [weather-app](https://github.com/leilaZ1111/weather-app)
-- `Type of Challenge:` Learning React
-
-## Description
-
 Welcome to "My First Weather App," a simple yet powerful weather forecasting application. This project was developed as a part of my journey in web development, with a focus on mastering essential skills in handling asynchronous requests, DOM manipulation, and data parsing.
 
 ## ⚙️ Technologies
@@ -20,6 +15,12 @@ This project allowed me to achieve the following learning objectives:
 - **DOM Manipulation:** Through DOM manipulation, I dynamically updated the web page based on the results of the AJAX requests. This skill is essential for creating interactive and responsive web applications.
 
 - **Data Aggregation and Parsing:** I learned how to aggregate and parse data fetched from the OpenWeather API. This knowledge is fundamental for extracting relevant information from external data sources.-
+
+## Sneak Peeks into the Weather App
+
+<p align="center">
+<img src="./weather-app.gif" width="80%" alt="Sneak Peeks into the Weather App">
+</p>
 
 ## 🚀 Features:
 
