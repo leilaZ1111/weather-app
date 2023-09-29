@@ -19,7 +19,7 @@ This project allowed me to achieve the following learning objectives:
 ## Sneak Peeks into the Weather App
 
 <p align="center">
-<img src="./weather-app.gif" width="50%" alt="Sneak Peeks into the Weather App">
+<img src="./weather-app.gif" width="65%" alt="Sneak Peeks into the Weather App">
 </p>
 
 ## 🚀 Features:
