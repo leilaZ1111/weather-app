@@ -30,7 +30,7 @@ This project allowed me to achieve the following learning objectives:
 
 ## Project Status
 
-This project was developed to fulfill specific learning objectives and served as an excellent introduction to working with AJAX, DOM manipulation, and data parsing.
+This project was developed to fulfill specific learning objectives and served as an introduction to working with AJAX, DOM manipulation, and data parsing.
 
 However, it's worth noting that the application's responsiveness could be further improved to ensure a seamless experience across various devices and screen sizes.
 
