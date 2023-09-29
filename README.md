@@ -1,46 +1,36 @@
-# The Weather Application
+# My First Weather App
 
-- Repository: `weather-app`
-- Type of Challenge: `Consolidation`
-- Duration: `4 days`
-- Deployment strategy: `Github pages / Netlify`
-- Team challenge : `solo`
+- `Repository:` [weather-app](https://github.com/leilaZ1111/weather-app)
+- `Type of Challenge:` Learning React
 
-## Mission objectives
+## Description
 
-In this challenge you will use and consolidate your knowledge on:
+Welcome to "My First Weather App," a simple yet powerful weather forecasting application. This project was developed as a part of my journey in web development, with a focus on mastering essential skills in handling asynchronous requests, DOM manipulation, and data parsing.
 
-- A typical AJAX flow: send asynchronous requests to a remote server and process the results
-- DOM manipulation: changing the DOM based on the results of the AJAX requests
-- Learn to aggregate and parse data fetched from an api
+## ⚙️ Technologies
 
-## The Mission
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-You have been sent abroad for a 10-month work mission. Your family and friends back home ask you about the weather where you live ALL. THE. TIME.  
-Enough is enough, you decide to build a small web application for them so that you can free your time to talk about more interesting topics.
+## Learning objectives of this project
 
-### Specifications
+This project allowed me to achieve the following learning objectives:
 
-#### 🌱 Must haves
+- **AJAX Flow:** I implemented a typical AJAX flow, enabling the application to send asynchronous requests to a remote server and process the results seamlessly. This fundamental skill is crucial for real-time data retrieval.
 
-- In the home page the user can enter the city of his/her choice (think of the right HTML elements here)
-- On clicking the SUBMIT button or pressing ENTER the application will display the weather for the next 5 days
-- The application must be responsive and mobile friendly
+- **DOM Manipulation:** Through DOM manipulation, I dynamically updated the web page based on the results of the AJAX requests. This skill is essential for creating interactive and responsive web applications.
 
-> 💡 Not sure where to start? Split this features into multiple smaller todos (in your code, sketch, ...)
+- **Data Aggregation and Parsing:** I learned how to aggregate and parse data fetched from the OpenWeather API. This knowledge is fundamental for extracting relevant information from external data sources.-
 
-#### 🌼 Nice to haves (in no specific order)
+## 🚀 Features:
 
-- Display a line graph of temperature over time using a library such as [Chart.js](https://www.chartjs.org)
-- Remember the user choice on subsequent visits
-- Allow the user to compare the weather in two cities
-- Use the API of https://unsplash.com/ to show a photo of the city they entered in the form.
+- Users can select their desired city on the application's homepage, ensuring they receive weather forecasts for their chosen locations.
+- With a simple click of the search button the app promptly retrieves the 5-day weather forecast for the selected city.
+- To streamline the user experience, the app remembers the user's city choice for future visits.
 
-### Instructions
+## Project Status
 
-- Create an account on [OpenWeather](https://home.openweathermap.org/.), and generate a key
-- Get the weather data using the native JS [`fetch()`](https://devdocs.io/dom/fetch_api/using_fetch) method (if you like, you can also check out [axios](https://github.com/axios/axios))
+This project was developed to fulfill specific learning objectives and served as an excellent introduction to working with AJAX, DOM manipulation, and data parsing.
 
-## _“When the ass begins to bray, surely rain will come that day.”_ (Good luck!)
+However, it's worth noting that the application's responsiveness could be further improved to ensure a seamless experience across various devices and screen sizes.
 
-![](./american-storm.gif)
+Additionally, due to the use of a personal API key for authentication, the application is currently limited to personal use. The key is not publicly displayed to protect data security. So the application is not currently deployed.
