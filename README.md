@@ -1,6 +1,6 @@
 # My First Weather App
 
-Welcome to "My First Weather App," a simple yet powerful weather forecasting application. This project was developed as a part of my journey in web development, with a focus on mastering essential skills in handling asynchronous requests, DOM manipulation, and data parsing.
+Welcome to my first Weather App, a simple weather forecasting application. This project was developed as a part of my journey in web development, with a focus on mastering essential skills in handling asynchronous requests, DOM manipulation, and data parsing.
 
 ## ⚙️ Technologies
 
